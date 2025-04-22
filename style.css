@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --navtam:20vh;
+    /*--fonts--*/
+    /*colors*/
+    --font-secondary-color: #b010c2;
+    /*sizes*/
+    --font-size--primary: 1em;
+    --font-size-big: 4.375em;
+    /*weights*/
+    --font-weight-normal: 550;
+    --font-weight-gruesa: 450;
+    /*fuentes*/
+    --font-primary:
+    "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    --font-secondary:
+    "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    --font-pixel:
+    "Press Start 2P", system-ui;
+    /*--fonts--*/
+    /*colors*/
+    --primary-color: #A954DF;
+    --secondary-color: rgb(19, 134, 228);
+    --bg-primary-color: rgb(15, 15, 15);
+    --bg-secondary-color: #A954DF;
+    --bg-white-color: rgba(247, 233, 249, 1);
+}
+.contenedor_body {
+    padding-top: var(--navtam);
+}
+
+/*NAV*/
+
+.img_logo img {
+    width: 55%;
+}
+.anclas a {
+    margin: auto;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-size: var(--font-size--primary) ;
+    font-weight: var(--font-weight-normal);
+    
+}
+.anclas a:hover
+{
+    color: var(--secondary-color);
+}   
+.nav_bar {
+    background-color: var(--bg-primary-color);
+    height: var(--navtam);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    border-bottom: 0.125em solid var(--bg-secondary-color);
+}
+
+.img_logo {
+    height: auto;
+    width: 15%;
+    overflow: hidden;
+    margin: auto;
+    margin-left: 2%;
+}
+#logo:hover
+{
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
+
+.anclas {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+}
+
+/*IMAGEN HAMBURGUESAS*/
+.bg_fvs img {
+    height: 108%;
+    width: 100%;
+}
+
+.bg_fvs {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+/*SOBRE NOSOTROS*/
+.abt_us {
+    background-color: var(--bg-primary-color);
+    height: 45em;
+    width: 100%;
+}
+.img-abt_us
+{
+    padding-top: 7%;
+    display: inline-block;
+}
+.img-abt_us img
+{
+    width: 105%;
+}
+.texto-abt_us
+{
+    width: 65%;
+    float: right;
+    margin-top: 2%;
+    text-align: center;
+}
+
+#Nosotros
+{
+    font-size: 3em;
+    color: var( --secondary-color);
+    margin-left: 25%;
+    margin-top: 2%;
+    font-family: var(--font-pixel);    
+}
+#sobre
+{
+    font-size: 3em;
+    margin-right: 25%;
+    color: var(--primary-color);
+    font-family: var(--font-pixel);
+}
+
+.texto-abt_us p
+{
+    color: var(--bg-white-color);
+    text-align: left;
+    font-size: 1.3em;
+    font-family: var(--font-pixel);
+    margin-top: 5%;
+    line-height: 2.125em;
+    padding-right: 4%;
+    padding-left: 5%;
+}
+
+/*Carrousell*/
+.puntos
+{
+    list-style:none
+}
+.carrousel {
+    width: 100%;
+    max-width: 240em;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    margin-top: 1em;
+  }
+  .carrousel .grande {
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    background-color: white;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  .carrousel .img {
+    width: calc(100% / 4);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+    background-color: darkblue;
+    
+  }
+  .carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrousel .punto {
+    width: 1em;
+    height: 1em;
+    margin: 1em 1em 0;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: darkblue;
+  }
+  .carrousel .punto.activo {
+    background-color: var(--primary-color);
+  }
+/*MENU*/
+.row img {
+    width: 10.625em;
+    border-radius: 10%;
+    height: 10.625em;
+    margin: 1.563em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+    text-align: center;
+    overflow-y: hidden;
+    width: 100%;
+}
+.mercaderia
+{
+    width: 33%;
+    line-height: 3em;
+}
+.mercaderia p{
+    font-size: 0.8em;
+}
+.tipos
+{
+padding-top: 3%;
+padding-bottom: 3%;
+}
+
+.MENU
+{
+background-color: var(--bg-white-color);
+font-family: var(--font-pixel);
+font-size: 0.625em;
+color: darkblue;
+}
+
+#menu {
+    color: var(--bg-white-color);
+    text-align: center;
+    background-color: var(--bg-secondary-color);
+    font-size: var(--font-size-big);
+    font-weight: var(--font-weight-gruesa);
+    font-family: var(--font-secondary);
+    height: 3em;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+span {
+    color: var(--font-secondary-color);
+}
+.mercaderia:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+#CocaZero
+{
+    margin-top: 2em;
+    width: 8.8em;
+    height: 10em;
+}
+#Sprite
+{
+    width: 13em;
+}
+
+#SpriteZero
+{
+    margin-top: 2.6em;
+    width: 10em;
+    height: 9.375em;
+}
+.container-fluid
+{
+    padding-left: 1em;
+}
+
+/*SUCURSALES*/
+.sucursales{
+    background-color: var(--bg-primary-color);
+    width: 100%;
+    height:50em;
+}
+
+#Sucursales{
+    justify-content: space-around;
+}
+
+.sucursales h2{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: var(--font-size-big);
+    font-weight: var(--font-weight-gruesa);
+    font-family: var(--font-secondary);
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+}
+.sucursales h3{
+    color: var(--bg-white-color);
+    text-align: center;
+    font-family: var(--font-pixel);
+}
+.sucursalesdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex: 1;
+    height: 65%;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+h4{
+    font-size: var(0.1em);
+}
+.gps h3{
+    margin-bottom: 1.5em;
+    color: var(--secondary-color);
+}
+.gps a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.gps:hover{
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+.gps iframe{
+    width: 16.75em;
+    height: 15em;
+    border-radius: 2em;
+}
+
+/*TRABAJA CON NOSOTROS*/
+input{
+    margin-bottom: 4.8%;
+    border: none;
+    font-size: var(--font-size--primary);
+    padding: 0.3em;
+    border-radius: 2em;
+    text-align: center;
+    margin-left: 0.6em;
+}
+select{
+    margin-bottom: 2%;
+}
+.wrk_wt_us{
+    font-size: var(--font-size--primary);
+    color: var(--bg-white-color);
+    font-family: var(--font-primary);
+    background-color: var(--bg-primary-color);
+    height: 65em;
+    width: 100%;
+    border-bottom: 2px solid var(--primary-color);
+}
+.formulario h2{
+    padding-top: 1em;
+    font-family: var(--font-primary);
+    margin-bottom: 0.1em;
+    font-size: var(--font-size-big);
+    color: var(--primary-color);
+    text-align: center;
+}
+.formulario h3{
+    text-align: center;
+    padding:2%;
+    color: var(--secondary-color);
+    font-size: var(--font-size--primary);
+    font-family: var(--font-pixel);
+    line-height: 1.3em;
+}
+input:last-child
+{
+    border: 0.125em solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-white-color);
+    padding: 0.5%;
+    margin-top: 3%;
+    margin-left: 0;
+    border-radius: 5em;
+    width: 6em;
+    height: 2em;
+    font-weight: 600;
+}
+input:last-child:hover
+{
+    background-color: var(--bg-white-color);  
+    color: var(--primary-color);
+}
+.formulario
+{
+    width: 100%;
+}
+.contenido
+{
+    width: 90%;
+    padding-top: 2em;
+    margin: 0 auto;
+}
+.claseformulario
+{
+    width: 50%;
+    float: left;
+    justify-content: center;
+    align-content: center;
+}
+.imagenformulario
+{
+    width: 50%;
+    float: right;
+    text-align: center;
+    justify-content: center;
+}
+.imagenformulario img
+{
+    width: 35em;
+    border-radius: 2em;
+}
+#email
+{
+    margin-left: 2em;
+}
+
+/*SEPARACION*/
+.separacion
+{
+    width: 100%;
+    height: 6vh;
+    background:linear-gradient(to right,darkblue,var(--primary-color),darkblue); 
+}
+/*FOOTER*/
+footer
+{
+background-color: var(--primary-color);
+}
+.footer {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    color: var(--bg-white-color);
+    font-family: var(--font-pixel);
+    justify-content: center;
+    text-align: center;
+}
+
+.logo_footer img
+{
+    width: 15em;
+}
+.mail_footer
+{
+    padding-top: 5em;
+}
+.ig_footer
+{
+    margin-top: 5.3em;  
+}
+.mail_footer p{
+    margin-top: 1em;
+}
+.ig_footer p{
+    margin-top: 1em;
+}
+
+
+.derechos-footer{
+    padding: 1em;
+    background-color: var(--bg-primary-color);
+}
+.derechos{
+    color: var(--bg-white-color);
+    text-align: center;
+}
+/* CELULARES*/
+@media (max-width: 600px) {
+    .contenedor_body {
+        padding-top: 16.5em;
+    }
+    .nav_bar {
+        flex-direction: column;
+        height: auto;
+    }
+    .img_logo {
+        width: 50%;
+        margin: 0 auto;  
+    }
+    .anclas {
+        width: 100%;
+        flex-direction: column;
+    }
+    .anclas a {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .bg_fvs img {
+        height: auto;
+        width: 100%;
+    }
+    .img-abt_us{
+        margin-left: 0;
+    };
+    #Nosotros
+    {
+        font-size: 2em;
+    }
+    #sobre
+    {
+        font-size: 2em;
+    }
+    .texto-abt_us {
+        width: 100%;
+        margin: 0;
+    }
+    .texto-abt_us p {
+        padding: 0;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row img {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .mercaderia {
+        width: 90%;
+    }
+    .formulario h2{
+        font-size: 2em;
+    }
+    #logo_footer{
+        height: 10em;
+        width: 10em;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .contenido{
+        margin-left: -10em;
+    }
+    .claseformulario{
+        width: 100%;
+    }
+}
+/* TABLETS */
+@media (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column;
+        height: auto;
+    }
+    .img_logo {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .anclas {
+        width: 100%;
+        flex-direction: column;
+    }
+    .anclas a {
+        margin: 0.625em 0;
+        text-align: center;
+    }
+    .bg_fvs
+    {
+        height: auto;
+        background-image: url(imgs/img_favs.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    .abt_us {
+        height: auto;
+    }
+    .texto-abt_us {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .texto-abt_us p {
+        padding: 1em;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row img {
+        width: 30em;
+        height: auto;
+        margin: 0.625em  0;
+    }
+    .mercaderia {
+        width: 30em;
+        padding-top: 2em;
+        padding-top: 2em;
+    }
+    #coca
+    {
+        height: 12.5em;
+        width: auto;
+    }
+    #agua{
+        height: 15em;
+        width: auto;
+    }
+    #cerveza
+    {
+        height: 12.5em;
+        width: auto;   
+    }
+    #sucursales
+    {
+        height: 125em;
+        margin-bottom: -25em;
+    }
+    .sucursalesdiv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .gps{
+        padding-top: 5em;
+    }
+    .wrk_wt_us
+    {
+        height: auto;
+    }
+   .contenido{
+    display: flex;
+    flex-direction: column;
+    padding-left: 11em;
+   }
+   .contenido img{
+    width: 100%;
+    height: auto;
+   };
+}
+   @media (max-width : 1160px) {
+    .abt_us {
+        height: auto;
+        padding-bottom: 3em;
+    }
+    #sucursales
+    {
+        height: 125em;
+        margin-bottom: -25em;
+    }
+    .sucursalesdiv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .gps{
+        padding-top: 5em;
+    }
+    .texto-abt_us {
+        width: 100%;
+        margin: 0;
+    }
+    .wrk_wt_us
+    {
+        height: auto;
+        padding-bottom: 5em;
+    }
+   .contenido{
+    display: flex;
+    flex-direction: column;
+    padding-left: 11em;
+   }
+   .contenido img{
+    width: 100%;
+    height: auto;
+   };
+}
